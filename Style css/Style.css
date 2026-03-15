@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Philosopher&family=Poppins:wght@300&display=swap');
+
+:root {
+    --pink: #f70077;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    list-style: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: .3s;
+
+}
+
+.btn:hover {
+    background: #f70077;
+    scale: .8;
+
+}
+
+
+/* style header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    padding-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+.logo span {
+    color: #f70077;
+}
+
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover {
+    color: #f70077;
+    letter-spacing: 2px;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem .5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+
+
+/* style Home */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../picture/hero-section.png);
+    background-size: cover;
+    background-position: center;
+    padding-left: 580px;
+    clip-path: ellipse(100% 80% at 50% 20%);
+}
+
+.home .content {
+    max-width: 50rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #333;
+}
+
+
+.home .content span {
+    font-size: 3rem;
+    color: #f70077;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+/* =========================== */
+
+
+#img img {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    fill-opacity: #666;
+    clip-path: ellipse(100% 80% at 50% 20%);
+
+}
+
+
+.title {
+    position: absolute;
+    color: black;
+    background-color: #c6c1c1;
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: 4rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+
+
+
+/* about us page style*/
+header .navbar .bout {
+    color: #f70077;
+}
+
+header .navbar .bout:hover {
+    text-decoration: underline;
+}
+
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .vid {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .vid video {
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about .row .vid h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+
+.about-section {
+    padding: 0;
+    margin: 0;
+}
+
+
+.about-section .row-cont {
+    padding-top: 7rem;
+}
+
+.about-section .row-cont .content h2 {
+    font-family: 'Philosopher', sans-serif;
+    color: #f70077;
+    padding-top: 10px;
+
+}
+
+.about-section .row-cont .content .iconLink {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+
+.about-section .row-cont .content .iconLink i {
+    color: #f70077;
+    overflow-y: visible;
+    padding-top: 10px;
+}
+
+.about-section .row-cont .content .iconLink i a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    transition: all .4s ease;
+}
+
+.about-section .row-cont .content .iconLink i a:hover {
+    color: #f70077;
+
+}
+
+
+/* ============== */
+.about-team {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 2%;
+    text-align: center;
+}
+
+.about-team .teamText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-team .teamText .t-team {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.about-team .teamText .t-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    color: #f70077;
+}
+
+
+
+.about-team .teamImgInfo {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 300px));
+    gap: 3rem;
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 24rem;
+
+}
+
+
+.about-team .teamImgInfo .box {
+    overflow: hidden;
+    border-radius: 2%;
+    box-shadow: 0 0 18px 2px #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+
+
+.about-team .teamImgInfo .box .img {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.about-team .teamImgInfo .box .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+}
+
+.about-team .teamImgInfo .box .t-name {
+    overflow-y: hidden;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    padding: .2rem 0;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.about-team .teamImgInfo .box .t-position {
+    overflow-y: hidden;
+    margin-top: .7rem;
+    padding: .2rem 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* service page style */
+header .navbar .serv {
+    color: #f70077;
+}
+
+header .navbar .serv:hover {
+    text-decoration: underline;
+}
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 2%;
+    background-color: #8484840a;
+}
+
+.service>h2 {
+    font-size: 3.5rem;
+    font-family: 'Philosopher', sans-serif;
+    color: #f70077;
+    text-align: center;
+}
+
+.service>p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.service .servicesBox {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 280px));
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.service .servicesBox .box {
+    padding: 3rem 1rem 1rem;
+    box-shadow: 0 0 8px 3px #eeeeee;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.service .servicesBox .box h2 {
+    font-family: 'Philosopher', sans-serif;
+    line-height: 1.2em;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service .servicesBox .box p {
+    font-family: 'Philosopher', sans-serif;
+    line-height: 24px;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* ====================== */
+
+
+.about-service {
+    padding: 5rem 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-service .serv-litText {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    color: #f70077;
+}
+
+.about-service .serv-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-service .serv-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: #fff;
+}
+
+.about-service .serv-box .box {
+    position: relative;
+    top: 0;
+}
+
+.about-service .serv-box .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 350px;
+    background: #f70077;
+    z-index: 1;
+    opacity: .1;
+    transition: all .4s ease;
+    border-radius: 2%;
+
+
+}
+
+.about-service .serv-box .box:hover:after {
+    width: 0;
+}
+
+.about-service .serv-box .box .img {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.about-service .serv-box .box .img img {
+    width: 450px;
+    border-radius: 2%;
+    height: 350px;
+
+}
+
+.about-service .serv-box .box .boxinfo {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    z-index: 2;
+}
+
+
+.about-service .serv-box .box .ser-name {
+    padding-bottom: .8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Philosopher', sans-serif;
+
+}
+
+.about-service .serv-box .box .ser-discription {
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+
+
+
+/* contact style */
+
+.contactUs {
+    display: flex;
+    padding-top: 6rem;
+    padding-left: 20rem;
+
+}
+
+.contactUs .form {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 12px 1px #243673;
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.contactUs .form .f-head {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Philosopher', sans-serif;
+    color: #e41345;
+}
+
+.contactUs .form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* padding: .1rem; */
+    padding: 2rem 2rem;
+}
+
+
+.contactUs .form form input,
+.contactUs .form form select,
+.contactUs .form form textarea,
+.contactUs .form form button {
+    padding: .7rem 1rem .7rem .5rem;
+    border: none;
+    box-shadow: 0 0 1px 1px #243673;
+    border-radius: 5px;
+    outline: none;
+    padding: 2rem 2rem;
+}
+
+::placeholder {
+    color: #3e4359;
+}
+
+.contactUs .form form select {
+    color: #3e4359;
+}
+
+.contactUs .form form button {
+    padding: 17px 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: #e41345;
+    border: 1px solid #e41345;
+    box-shadow: none;
+    font-weight: 700;
+    color: #fff;
+    transition: all .4s ease;
+}
+
+.contactUs .form form button:hover {
+    background-color: #f70077;
+}
+
+
+
+
+
+
+/* footer style */
+
+.footer {
+    padding: 2rem 2%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    gap: 2rem;
+    background-color: #eee;
+    color: #1a1a1a;
+    /* border-radius: 30px 30px 0 0 ; */
+    margin-top: 30px;
+
+}
+
+.footer .box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.footer .box .bf-text {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: xx-large;
+    font-family: 'Philosopher', sans-serif;
+
+}
+
+.footer .box a {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+
+.footer .box .subscribe {
+    display: flex;
+
+}
+
+.footer .box .subscribe input {
+    padding-right: 10px;
+    border-radius: 20px;
+    height: 4rem;
+    margin-top: 10px;
+}
+
+
+.footer .box .subscribe input {
+    width: 60%;
+    height: 55px;
+    padding: .5rem;
+
+}
+
+.footer .box .subscribe .btn {
+    border: none;
+    box-sizing: border-box;
+    background-color: none;
+    background-color: #f70077;
+    color: #fff;
+    padding: .8rem 2rem;
+    font-size: 20px;
+    transition: all .4s ease;
+    margin: 10px;
+}
+
+.footer .box .subscribe .btn:hover {
+    background-color: #e41345;
+}
+
+.footer .box .links li a {
+    font-size: 15px;
+    text-transform: capitalize;
+    font-style: bold;
+    align-self: baseline;
+    transition: all 0.3s;
+}
+
+.footer .box .links li a:hover {
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.footer .box .icons a {
+    padding: 1rem;
+    font-size: 24px;
+    transition: all .5s ease;
+}
+
+
+.footer .box .address {
+    padding-right: 1rem;
+}
+
+
+
+
+
+
+
+/* ====================== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 4rem 5%;
+    background-color: #eee;
+    color: #1a1a1a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        padding-left: 350px;
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+    #img img {
+        width: 90%;
+    }
+
+    /* .serv-img {
+        height: 90%;
+        width: 90%;
+    } */
+
+    .title {
+        width: 90%;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .about-service .serv-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contactUs {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center
+    }
+
+    .contactUs .form {
+        width: 90%;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center
+    }
+
+
+    .footer .form {
+        width: 90%;
+    }
+
+    .footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+
+@media (max-width:768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .logo {
+        padding-right: 500px;
+    }
+
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    header .navbar a:hover {
+        background: #fae4ef;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .home .content span {
+        font-size: 2rem;
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+
+    .home .content .btn {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    #img img {
+        width: 70%;
+    }
+
+    /* .title {
+        font-size: 3rem;
+        top: 40%;
+    } */
+
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+        top: 40%;
+        width: 70%;
+    }
+
+    .about-team .teamText .t-team {
+        font-size: 1rem;
+    }
+
+    .about-team .teamText .t-heading {
+        font-size: 1.5rem;
+    }
+
+    .about-team .teamImgInfo {
+        padding: 0;
+    }
+
+    .about-team .teamImgInfo .box .t-name {
+        font-size: 1rem;
+    }
+
+    .about-team .teamImgInfo .box .t-position {
+        font-size: 0.7rem;
+    }
+
+
+    .service .servicesBox {
+        grid-template-columns: repeat(2, minmax(100px, 280px));
+
+    }
+
+    .service>p {
+        padding: 0 8%;
+    }
+
+
+    .about-service {
+        font-size: 1.5rem;
+    }
+
+
+    .about-service .serv-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+    /* footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1rem 2%;
+    }
+
+    .footer .box .subscribe {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer .box .subscribe input {
+        width: 100%;
+
+    }
+
+    .footer .box .subscribe .btn {
+        width: fit-content;
+    }
+
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header .logo {
+        padding-left: 300px;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .home {
+        padding-left: 70px;
+    }
+
+    .home .content h3 {
+        color: #555;
+    }
+
+    .about-img img {
+        min-height: 50vh;
+    }
+
+    .about-section .title {
+        font-size: 2rem;
+        top: 30%;
+    }
+
+
+    .service .servicesBox {
+        grid-template-columns: repeat(1, minmax(100px, 280px));
+
+    }
+
+
+    .about-service .serv-box {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+}
