@@ -818,8 +818,8 @@ footer {
         display: block;
     }
 
-    header .logo {
-        padding-right: 500px;
+    header {
+        padding-left : 2rem;
     }
 
 
@@ -867,19 +867,15 @@ footer {
     }
 
     #img img {
-        width: 70%;
+        width: 100%;
     }
 
-    /* .title {
-        font-size: 3rem;
-        top: 40%;
-    } */
 
     .title {
         font-size: 2.5rem;
         text-align: center;
         top: 40%;
-        width: 70%;
+        width: 100%;
     }
 
     .about-team .teamText .t-team {
@@ -958,7 +954,7 @@ footer {
     }
 
     header .logo {
-        padding-left: 300px;
+        padding-left: .5rem;
     }
 
     .heading {
@@ -973,13 +969,18 @@ footer {
         color: #555;
     }
 
-    .about-img img {
-        min-height: 50vh;
+
+    #img img {
+        width:100%;
+        height: 70%;
     }
 
-    .about-section .title {
-        font-size: 2rem;
-        top: 30%;
+
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+        top: 40%;
+        width: 100%;
     }
 
 
